@@ -1,4 +1,4 @@
-#  Projekt bazy danych — Multikino
+# Part1 / Projekt bazy danych — Multikino
 **Typ projektu:** Projekt studencki  
 
 ---
