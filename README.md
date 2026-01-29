@@ -95,11 +95,6 @@ Widok wykorzystuje funkcje agregujące i służy do analizy sprzedaży.
 
 ---
 
-##  Diagram ERD
 
-Diagram relacji między tabelami został przygotowany w Microsoft SQL Server Management Studio i przedstawia powiązania pomiędzy encjami.
 
----
-
-##  Zawartość repozytorium
 
