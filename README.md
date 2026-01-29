@@ -1,7 +1,4 @@
 #  Projekt bazy danych — Multikino
-
-**Autor:** Kuba Pietrzykowski  
-**Technologia:** Microsoft SQL Server (T-SQL)  
 **Typ projektu:** Projekt studencki  
 
 ---
