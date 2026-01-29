@@ -1,4 +1,4 @@
-# 🎬 Projekt bazy danych — Multikino
+#  Projekt bazy danych — Multikino
 
 **Autor:** Kuba Pietrzykowski  
 **Technologia:** Microsoft SQL Server (T-SQL)  
@@ -6,14 +6,14 @@
 
 ---
 
-## 📌 Cel projektu
+##  Cel projektu
 
 Projekt przedstawia relacyjną bazę danych służącą do przechowywania i przetwarzania informacji związanych z działalnością multikina.  
 Baza umożliwia zarządzanie danymi o filmach, salach kinowych, seansach oraz sprzedanych biletach, a także analizę sprzedaży i dochodów.
 
 ---
 
-## 📋 Wymagania projektowe
+##  Wymagania projektowe
 
 Projekt został wykonany zgodnie z wymaganiami uczelni:
 
@@ -31,31 +31,31 @@ Projekt został wykonany zgodnie z wymaganiami uczelni:
 
 ---
 
-## 🗂️ Struktura bazy danych
+## Struktura bazy danych
 
 Projekt zawiera następujące tabele:
 
-### 🎞️ Filmy
+###  Filmy
 Przechowuje informacje o filmach, takie jak tytuł, gatunek, czas trwania oraz rok produkcji.  
 Zastosowano ograniczenia CHECK zapewniające poprawność danych.
 
-### 🏛️ Sale
+###  Sale
 Zawiera dane o salach kinowych, w tym nazwę sali, liczbę miejsc oraz informację o obsłudze projekcji 3D.
 
-### 📅 Seanse
+###  Seanse
 Przechowuje informacje o zaplanowanych seansach, przypisując film do sali i daty projekcji.  
 Tabela powiązana z **Filmy** i **Sale** poprzez klucze obce.
 
-### 🎟️ Bilety
+###  Bilety
 Zawiera informacje o sprzedanych biletach, numerach miejsc oraz osobach kupujących.  
 Zastosowano ograniczenie zapobiegające sprzedaży dwóch biletów na to samo miejsce w ramach jednego seansu.
 
-### 👨‍💼 Pracownicy
+###  Pracownicy
 Przechowuje dane pracowników kina, takie jak imię, nazwisko, stanowisko oraz wynagrodzenie.
 
 ---
 
-## 🔗 Relacje między tabelami
+##  Relacje między tabelami
 
 - **Seanse → Filmy** — każdy seans dotyczy jednego filmu  
 - **Seanse → Sale** — każdy seans odbywa się w jednej sali  
@@ -63,7 +63,7 @@ Przechowuje dane pracowników kina, takie jak imię, nazwisko, stanowisko oraz w
 
 ---
 
-## 🔐 Ograniczenia i spójność danych
+##  Ograniczenia i spójność danych
 
 W projekcie zastosowano:
 
@@ -76,9 +76,9 @@ Dzięki temu baza zachowuje spójność i ogranicza możliwość wprowadzania b�
 
 ---
 
-## 👁️ Widoki
+##  Widoki
 
-### 📄 `SzczegolySeansow`
+###  `SzczegolySeansow`
 Wyświetla szczegóły seansów wraz z:
 - tytułem filmu  
 - nazwą sali  
@@ -89,7 +89,7 @@ Widok ułatwia przegląd repertuaru kina.
 
 ---
 
-### 📊 `SprzedazBiletow` (widok agregujący)
+###  `SprzedazBiletow` (widok agregujący)
 Pokazuje:
 - liczbę sprzedanych biletów na każdy seans  
 - łączny dochód z danego seansu  
@@ -98,11 +98,11 @@ Widok wykorzystuje funkcje agregujące i służy do analizy sprzedaży.
 
 ---
 
-## 🗺️ Diagram ERD
+##  Diagram ERD
 
 Diagram relacji między tabelami został przygotowany w Microsoft SQL Server Management Studio i przedstawia powiązania pomiędzy encjami.
 
 ---
 
-## 📂 Zawartość repozytorium
+##  Zawartość repozytorium
 
